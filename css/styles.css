@@ -1,0 +1,168 @@
+/* Pseudo Selectores CUSTOM PROPERTIES **/
+:root {
+    /*Colores*/
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario:#FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+    --fuentePrincipal: font-family: 'Roboto', sans-serif;
+}
+/* Globales Hack para normalizar los rem **/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+/* Design System **/
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+    font-size: 16px; /* 1 rem = 10px*/
+    font-family: var(--fuentePrincipal);
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+}
+/*Contenedor **/
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/** Fondo Html **/
+.sombra {
+    -webkit-box-shadow: 6px 12px 15px 14px rgba(112,112,112,0.61);
+    -moz-box-shadow: 6px 12px 15px 14px rgba(112,112,112,0.61);
+    box-shadow: 6px 12px 15px 14px rgba(112,112,112,0.61);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+/** Tipografia  */
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+/** Header & Nav */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+header{
+    display: flex;
+    background-color: black;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+.titulo span{
+    font-size: 2rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+
+    font-weight: 700;
+    padding-right: 10px;
+
+}
+nav a:hover {
+
+    color: #FFC107;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+
+.subtitulo {
+    color: #0996d8;
+}
+
+/** Animaciones */
+
+.cuadrado-uno, .cuadrado-dos, .cuadrado-tres {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+    background-color: lightblue;
+    transition: transform 0.5s;
+}
+
+.cuadrado-uno {
+
+    background-color: lightcoral;
+
+}
+
+.cuadrado-dos {
+
+    background-color: lightgreen;
+
+}
+
+.cuadrado-tres {
+
+    background-color: lightblue;
+
+}
+.proyectos h2{
+    color: var(--secundario);
+}
+.estado {
+    text-align: center;
+    font-weight: 400;
+    color: var(--oscuro);
+    margin: 2rem;
+}
+.descripcion {
+    margin: 2rem;
+}
+/** Seccion Footer */
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius:1rem;
+}
+
+.footer span {
+
+    font-size: 35;
+    color: #FFC107;
+
+}
